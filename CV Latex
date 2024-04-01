@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{comment}
+\usepackage{fontawesome}
+\usepackage{tikz}
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-2.1mm}\textbf{#1}&{#2} & \hspace{-3.1mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Sai Kumar Sapare} % Your Name
+\newcommand{\course}{BE - Mechanical Engineering.} % Your Course
+\newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{xxxxxxxxxx} % Your Phone Number
+\newcommand{\emaila}{saisapare420@gmail.com} %Email 1
+\newcommand{\linkedin}{https://www.linkedin.com/in/sai-sapare-6b811b242/} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+    
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://www.linkedin.com/in/sai-sapare-6b811b242/}{\faLinkedinSquare \hspace{0.2mm} linkedin} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-6301597185 }
+\vspace{-3mm}
+\end{center}
+
+%-----------EDUCATION-----------------
+\vspace{1.5mm}
+
+\section{Career Objective.}
+\vspace{0.5mm}
+\textbf{}{To obtain a challenging position in a high quality engineering environment where my resourceful experience and academic skills will add value to organizational operations.}
+
+\vspace{-0.5mm}
+\section{Professional Qualification.}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Honda motors Pvt.Ltd, Gadwal.} 
+{Industial Training for a period of 6 months.} 
+{July 2020 - Dec 2020.} %Event Dates
+{ } %Website
+\resumeSubHeadingListEnd
+\vspace{-2.5mm}
+\section{Education.}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Sreenidhi Institute Of Science And Technology, Hyderabad.} 
+{BE - Mechanical Engineering.} 
+{Aug 2021 - Jun 2024.} %Event Dates
+{CGPA: 8.9/10.} %Website
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeEdu{Government Polytechnic, Masabtank.}
+{Diploma in Mechanical Engineering.}
+{Jun 2018 - Apr 2021.}
+{CGPA: 9.84/10.}
+\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeEdu
+{DVM High School, Gadwal.}
+{Class - X.}
+{Jun 2017 - Mar 2018.}
+{CGPA: 8.8/10.}
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+\section{Technical Skills.}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+
+\hspace{-3.1mm}\textbf{ Core skills : }{Thermal Engineering, Fluid Mechanics, Solid Mechanics.}\vspace{1.5mm} \\
+\hspace{-3.1mm}\textbf{ Programming Languages : }{ Python.}\vspace{1.5mm}\\
+\hspace{-3.1mm}\textbf{ Operating system : }{Windows.}\vspace{1.5mm}\\
+\hspace{-3.1mm}\textbf{ Tools   : }{AutoCAD, Ansys, Solidworks.}\vspace{1.5mm}\\
+\end{tabular*}}
+\vspace{-4.5mm}
+%-----------PROJECTS-----------------
+\section{Projects.}
+\vspace{1.5mm}
+\resumeSubHeadingListStart
+
+\vspace{2.5mm}
+\resumeProject
+{Design and fabrication of Articulated Robot Arm for pick and place applicantion.}
+{} %Project Name, Location Name
+{Jan 2023 - Apr 2023.} %Event Dates
+{} 
+\resumeItemListStart
+\item[$\bullet$] Designed and fabricated an articulated robot arm for pick-and-place functions, amplifying industrial efficiency through automation and diminishing the necessity for human engagement in repetitive assembly tasks.
+
+\resumeItemListEnd
+\vspace{2.5mm}
+\resumeProject
+{Simulation of Steam Power-Plant using Python.} %Project Name
+{} %Project Name, Location Name
+{Oct 2023 - Nov 2023}{} %Website
+\resumeItemListStart
+\item[$\bullet$] Developed a simulation for a steam power plant by utilizing provided initial steam conditions, effectively determining and analyzing key output parameters.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+\section{Achievements.}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+\resumeAchieve{1. }{\hspace{-45.5mm}{ Participated in 3D printing workshop organized by Magnity}}{2022}
+\resumeAchieve{2. }{\hspace{-45.5mm}{ Volunteered at Blood Donation Camp oraganized by NSS , SNIST.}}{2023}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Behavioral Skills.}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{1.5\textwidth} p{1.5\textwidth}}
+
+\hspace{-3.1mm}{\text{ 1.}{ Adaptability.}} \vspace{1.5mm}
+\\\hspace{-3.1mm} {\text{2.} Time management} \\  
+\end{tabular*}}
+\vspace{-3.5mm}
+\section{Hobbies.}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{1.5\textwidth} p{1.5\textwidth}}
+
+\hspace{-3.1mm}{\text{ 1.}{ Yoga}} \vspace{1.5mm}
+\\\hspace{-3.1mm}{\text{ 2.}{ Char Coal Drawing.}} \vspace{1.5mm}
+\\\hspace{-3.1mm} {\text{3.} {Video Editing.}}
+\end{tabular*}}
+\vspace{-3.5mm}
+\section{Declaration}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{\hspace{10.1mm}{I hereby declare that the details furnished above are true and correct to the best of my knowledge and
+belief and}}{I undertake to inform you of any changes there in, immediately.}{\raisebox{0.75pt}{}}
+\vspace{1.5mm}
+
+{PLACE : Hyderabad.}
+
+{DATE : 31th Mar 2024. \hspace{130.5mm}{{S.Sai Kumar}}}
+
+
+\vspace{-1mm}
+\resumeSubHeadingListEnd
+\vspace{0mm}
+%-------------------------------------------
+\end{document}
